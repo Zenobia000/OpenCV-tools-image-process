@@ -1,0 +1,41 @@
+# Core Dependencies
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+
+# Machine Learning
+dlib>=19.24.0
+scikit-learn>=1.1.0
+scikit-image>=0.19.0
+scipy>=1.9.0
+
+# Data Processing
+pandas>=1.4.0
+pillow>=9.0.0
+
+# Jupyter Environment
+jupyter>=1.0.0
+ipywidgets>=7.7.0
+
+# Performance & Utilities
+imutils>=0.5.4
+tqdm>=4.64.0
+
+# Optional: Deep Learning (uncomment if needed)
+# tensorflow>=2.10.0
+# torch>=1.12.0
+# torchvision>=0.13.0
+
+# Optional: Computer Vision Extensions
+# ultralytics>=8.0.0  # YOLOv8
+# mediapipe>=0.9.0    # Google MediaPipe
+
+# Development Tools
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
