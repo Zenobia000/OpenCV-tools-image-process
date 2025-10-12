@@ -47,8 +47,10 @@
 - ✅ 建立1002行測試代碼 (67測試, 100%通過率, 99%覆蓋)
 - ✅ Poetry環境設置完成 (Python 3.10, 158套件)
 - ✅ 補充階段二教學內容 (7個模組)
-- ✅ 新增幾何變換教學 (geometric_transformations.ipynb)
-- ✅ 新增算術運算教學 (arithmetic_operations.ipynb)
+- ✅ 新增幾何變換教學 (2.2.2_geometric_transformations.ipynb)
+- ✅ 新增算術運算教學 (2.2.4_arithmetic_operations.ipynb)
+- ✅ 完成WBS檔案命名重構 (11個檔案加上編號前綴)
+- ✅ 完成P0-P2檔案審查與清理 (刪除3個重複檔案, 減少3.5MB)
 
 **遇到問題**:
 - ~~⚠️ 單元測試覆蓋率0%，品質保證不足~~ ✅ 已解決 (99%覆蓋)
