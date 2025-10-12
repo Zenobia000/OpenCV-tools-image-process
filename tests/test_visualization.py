@@ -23,27 +23,42 @@ class TestDisplayImage:
     """Tests for display_image function."""
 
     @patch('matplotlib.pyplot.show')
+    @patch('matplotlib.pyplot.axis')
+    @patch('matplotlib.pyplot.title')
+    @patch('matplotlib.pyplot.imshow')
     @patch('matplotlib.pyplot.figure')
-    def test_display_bgr_image(self, mock_figure, mock_show, sample_image_bgr):
+    def test_display_bgr_image(self, mock_figure, mock_imshow, mock_title,
+                              mock_axis, mock_show, sample_image_bgr):
         """Test displaying BGR image."""
         display_image(sample_image_bgr, title="Test Image")
 
         # Verify plt.figure and plt.show were called
         mock_figure.assert_called_once()
         mock_show.assert_called_once()
+        mock_title.assert_called_once_with("Test Image")
+        mock_axis.assert_called_once_with('off')
 
     @patch('matplotlib.pyplot.show')
+    @patch('matplotlib.pyplot.axis')
+    @patch('matplotlib.pyplot.title')
+    @patch('matplotlib.pyplot.imshow')
     @patch('matplotlib.pyplot.figure')
-    def test_display_grayscale_image(self, mock_figure, mock_show, sample_image_gray):
+    def test_display_grayscale_image(self, mock_figure, mock_imshow, mock_title,
+                                    mock_axis, mock_show, sample_image_gray):
         """Test displaying grayscale image."""
         display_image(sample_image_gray, title="Gray Image", cmap='gray')
 
         mock_figure.assert_called_once()
         mock_show.assert_called_once()
+        mock_title.assert_called_once_with("Gray Image")
 
     @patch('matplotlib.pyplot.show')
+    @patch('matplotlib.pyplot.axis')
+    @patch('matplotlib.pyplot.title')
+    @patch('matplotlib.pyplot.imshow')
     @patch('matplotlib.pyplot.figure')
-    def test_display_with_custom_figsize(self, mock_figure, mock_show, sample_image_bgr):
+    def test_display_with_custom_figsize(self, mock_figure, mock_imshow, mock_title,
+                                        mock_axis, mock_show, sample_image_bgr):
         """Test displaying image with custom figure size."""
         display_image(sample_image_bgr, figsize=(15, 12))
 
