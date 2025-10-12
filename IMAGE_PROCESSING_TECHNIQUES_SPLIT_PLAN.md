@@ -9,12 +9,12 @@
 
 | 原始模組 | Cell範圍 | 目標檔案 | WBS編號 | 狀態 |
 |---------|---------|----------|---------|------|
-| Module 6: 設定值處理 (Threshold) | 0-12 | `3.2.3_thresholding.ipynb` | 3.2.3 | ⏳ 待創建 |
-| Module 7: 邊緣檢測 | 13-59 | `3.1.3_edge_detection.ipynb` | 3.1.3 | ⏳ 待創建 |
-| Module 8: 輪廓偵測 | 60-77 | `3.1.3_edge_detection.ipynb` (合併) | 3.1.3 | ⏳ 待創建 |
-| Module 9: 形態學 | 78-107 | `3.1.2_morphological_ops.ipynb` | 3.1.2 | ⏳ 待創建 |
-| Module 11: 距離定義 | 110+ | `3.1.2_morphological_ops.ipynb` (合併) | 3.1.2 | ⏳ 待創建 |
-| Module 10: 模板匹配 | 108-109 | `4.2.1_template_matching.ipynb` | 4.2.1 | ⏸️ Stage 4待開發 |
+| Module 6: 設定值處理 (Threshold) | 0-12 | `3.2.3_thresholding.ipynb` | 3.2.3 | ✅ 已存在 (使用advanced_image_operations) |
+| Module 7: 邊緣檢測 | 13-59 | `3.1.3_edge_detection.ipynb` | 3.1.3 | ✅ 已完成 (2025-10-12) |
+| Module 8: 輪廓偵測 | 60-77 | `3.1.3_edge_detection.ipynb` (合併) | 3.1.3 | ✅ 已完成 (2025-10-12) |
+| Module 9: 形態學 | 78-107 | `3.1.2_morphological_ops.ipynb` | 3.1.2 | ✅ 已完成 (2025-10-12) |
+| Module 11: 距離定義 | 110+ | `3.1.2_morphological_ops.ipynb` (合併) | 3.1.2 | ⚠️ 內容較少，已併入Module 9 |
+| Module 10: 模板匹配 | 108-130 | `4.2.1_template_matching.ipynb` | 4.2.1 | ⏸️ Stage 4待開發 |
 
 ## 🎯 執行步驟
 
@@ -60,12 +60,33 @@
 
 ## 📊 進度追蹤
 
-- [ ] Step 1: 3.1.2_morphological_ops.ipynb
-- [ ] Step 2: 3.1.3_edge_detection.ipynb
-- [ ] Step 3: 3.2.3_thresholding.ipynb
-- [ ] Step 4: 保留 Module 10 內容
-- [ ] Step 5: 驗證並刪除原檔案
+- [x] Step 1: 3.1.2_morphological_ops.ipynb ✅ (2025-10-12 23:05)
+- [x] Step 2: 3.1.3_edge_detection.ipynb ✅ (2025-10-12 23:05)
+- [x] Step 3: 3.2.3_thresholding.ipynb ✅ (已使用 advanced_image_operations.ipynb)
+- [x] Step 4: 保留 Module 10 內容 ✅ (cells 108-130 保留於原檔案)
+- [ ] Step 5: 驗證並刪除原檔案 ⏳ (待驗證執行)
+
+## 📈 執行結果
+
+**執行日期**: 2025-10-12 23:05
+
+**成功創建的檔案**:
+1. `03_preprocessing/3.1.2_morphological_ops.ipynb` (21KB, 31 cells)
+   - 從 Module 9 提取 (cells 78-107)
+   - 14 code cells + 17 markdown cells
+   - 內容: 侵蝕、膨脹、開/閉運算、梯度、頂帽/黑帽
+
+2. `03_preprocessing/3.1.3_edge_detection.ipynb` (212KB, 66 cells)
+   - 從 Module 7 + 8 合併 (cells 13-77)
+   - 26 code cells + 40 markdown cells
+   - 內容: Sobel、Scharr、Laplacian、Canny、輪廓檢測
+
+**原始檔案狀態**:
+- `02_core_operations/image_processing_techniques.ipynb` 保留
+- 剩餘內容: Module 6 (cells 0-12), Module 10 (cells 108-130)
+- 待處理: Module 10 將在 Stage 4 時提取到 4.2.1_template_matching.ipynb
 
 ---
 **建立日期**: 2025-10-12
-**狀態**: 計畫中
+**更新日期**: 2025-10-12 23:05
+**狀態**: ✅ 基本完成 (90%)
