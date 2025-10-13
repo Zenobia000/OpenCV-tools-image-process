@@ -5,6 +5,7 @@ description = "A comprehensive learning platform for computer vision and image p
 authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
 license = "MIT"
+packages = [{include = "utils"}]
 package-mode = false
 homepage = "https://github.com/your-username/OpenCV-tools-image-process"
 repository = "https://github.com/your-username/OpenCV-tools-image-process"
