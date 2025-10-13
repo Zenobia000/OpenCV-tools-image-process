@@ -884,6 +884,17 @@ files = [
 ]
 
 [[package]]
+name = "dlib"
+version = "20.0.0"
+description = "A toolkit for making real world machine learning and data analysis applications"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "dlib-20.0.0.tar.gz", hash = "sha256:9ab6a6fe113cc36a20c3f611c57fa6a07f18d1169bd04efb85c32e21b23b7d2b"},
+]
+
+[[package]]
 name = "docutils"
 version = "0.21.2"
 description = "Docutils -- Python Documentation Utilities"
@@ -4608,4 +4619,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "d6d27fef018b0e619ed4b673922b088b159323fc486b6e95ed02ac3cbeb6b51c"
+content-hash = "0e872e48ee774a50e49d7848d3cebb0490f2d41cb448b18bd351f0e75d3e1ed5"

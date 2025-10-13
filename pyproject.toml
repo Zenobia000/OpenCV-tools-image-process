@@ -40,6 +40,7 @@ imutils = ">=0.5.4"
 tqdm = ">=4.64.0"
 jupyter = ">=1.0.0"
 ipywidgets = ">=7.7.0"
+dlib = "^20.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.0.0"
