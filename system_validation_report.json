@@ -1,0 +1,46 @@
+{
+  "start_time": 1760437249.739099,
+  "tests": {
+    "OpenCV安裝": {
+      "status": "passed",
+      "execution_time": 28.809547424316406,
+      "details": "測試完成"
+    },
+    "工具函數": {
+      "status": "error",
+      "execution_time": 31.932592391967773,
+      "error": "resize_image() got an unexpected keyword argument 'max_width'"
+    },
+    "項目結構": {
+      "status": "passed",
+      "execution_time": 0.118255615234375,
+      "details": "測試完成"
+    },
+    "項目模組": {
+      "status": "passed",
+      "execution_time": 0.5970001220703125,
+      "details": "測試完成"
+    },
+    "資源文件": {
+      "status": "passed",
+      "execution_time": 31.851530075073242,
+      "details": "測試完成"
+    },
+    "性能基準": {
+      "status": "passed",
+      "execution_time": 25.04587173461914,
+      "details": "測試完成"
+    },
+    "錯誤處理": {
+      "status": "passed",
+      "execution_time": 0.148773193359375,
+      "details": "測試完成"
+    }
+  },
+  "overall_success": true,
+  "passed_tests": 6,
+  "total_tests": 7,
+  "success_rate": 85.71428571428571,
+  "end_time": 1760437249.8576922,
+  "total_time": 0.11859321594238281
+}
